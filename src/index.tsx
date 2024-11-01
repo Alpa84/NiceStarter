@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals'
 import { theme } from './styles/theme'
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyles } from './styles/GlobalStyles'
+import 'antd/dist/reset.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(

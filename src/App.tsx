@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
-import Button from './components/Button'
+import { Button } from 'antd'
+import { ImageBuilder } from './components/ImageBuilder'
 
 // Import your components or create placeholders
 const Home: React.FC = () => <h2>Home Page</h2>
@@ -20,7 +21,7 @@ const App: React.FC = () => {
           </li>
           <li>
             <Link to="/contact">Contact</Link>
-            <Button />
+            <Button type="primary">Click Me</Button>
           </li>
         </ul>
       </nav>
@@ -30,6 +31,7 @@ const App: React.FC = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <ImageBuilder />
     </Router>
   )
 }
